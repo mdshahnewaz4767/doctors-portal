@@ -3,16 +3,18 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import Footer from '../../Shared/Footer/Footer';
 import './Appointment.css';
 import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
+import BookAppointment from '../BookAppointment/BookAppointment';
 
 const Appointment = () => {
-    const [selectedData, setSelectedDate] = useState(new Date())
-    const handleDateChange = (data) => {
-        setSelectedDate(data)
+    const [selectedDate, setSelectedDate] = useState(new Date())
+    const handleDateChange = (date) => {
+        setSelectedDate(date)
     }
     return (
         <div>
             <Navbar></Navbar>
             <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
+            <BookAppointment date={selectedDate}></BookAppointment>
            <Footer></Footer>
         </div>
     );
