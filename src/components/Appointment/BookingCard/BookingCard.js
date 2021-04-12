@@ -1,4 +1,5 @@
 import React from 'react';
+import AppointmentForm from '../AppointmentForm';
 
 const BookingCard = ({booking}) => {
     return (
@@ -9,7 +10,7 @@ const BookingCard = ({booking}) => {
                     <h6>{booking.visitingHour}</h6>
                     <p>{booking.totalSpace} SPACES AVAILABLE</p>
                     <button  className="btn btn-brand text-uppercase">Book Appointment</button>
-                  
+                    <AppointmentForm></AppointmentForm>
                 </div>
             </div>
         </div>
