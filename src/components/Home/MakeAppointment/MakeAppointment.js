@@ -1,5 +1,5 @@
 import React from 'react';
-import doctor from '../../images/doctor.png';
+import doctor from '../../../images/doctor.png';
 import './MakeAppointment.css';
 
 const MakeAppointment = () => {

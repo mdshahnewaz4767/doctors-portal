@@ -1,5 +1,5 @@
 import React from 'react';
-import featured from '../../images/featured.png';
+import featured from '../../../images/featured.png';
 
 const FeaturedService = () => {
     return (

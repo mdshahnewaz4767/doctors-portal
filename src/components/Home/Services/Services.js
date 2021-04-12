@@ -1,7 +1,7 @@
 import React from 'react';
-import fluride from '../../images/fluoride.png';
-import cavity from '../../images/cavity.png';
-import whitening from '../../images/whitening.png';
+import fluride from '../../../images/fluoride.png';
+import cavity from '../../../images/cavity.png';
+import whitening from '../../../images/whitening.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 const serviceData = [

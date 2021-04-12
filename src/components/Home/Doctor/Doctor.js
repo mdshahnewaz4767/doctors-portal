@@ -1,5 +1,5 @@
 import React from 'react';
-import doctor from '../../images/doctor-sm.png'
+import doctor from '../../../images/doctor-sm.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 

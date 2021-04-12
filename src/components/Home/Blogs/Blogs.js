@@ -1,5 +1,5 @@
 import React from 'react';
-import wilson from '../../images/wilson.png';
+import wilson from '../../../images/wilson.png';
 import BlogPost from '../BlogPost/BlogPost';
 import './Blogs.css'
 

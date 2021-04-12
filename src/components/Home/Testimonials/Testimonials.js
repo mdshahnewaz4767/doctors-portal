@@ -1,8 +1,8 @@
 import React from 'react';
 import Testimonial from '../Testimonial/Testimonial';
-import wilson from '../../images/wilson.png';
-import ema from '../../images/ema.png';
-import aliza from '../../images/aliza.png';
+import wilson from '../../../images/wilson.png';
+import ema from '../../../images/ema.png';
+import aliza from '../../../images/aliza.png';
 import './Testimonials.css';
 
 const testimonialData = [
