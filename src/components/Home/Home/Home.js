@@ -8,7 +8,7 @@ import Blogs from '../Blogs/Blogs';
 import Doctors from '../Doctors/Doctors';
 import Contact from '../Contact/Contact';
 import Footer from '../../Shared/Footer/Footer';
-
+import './Home.css';
 
 const Home = () => {
     return (

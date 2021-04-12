@@ -11,6 +11,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
         <Route to="/appointment">
           <Appointment />
         </Route>
