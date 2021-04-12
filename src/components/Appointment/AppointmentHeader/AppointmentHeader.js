@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Calendar from 'react-calendar';
-import chair from '../../images/chair.png';
+import chair from '../../../images/chair.png';
 import 'react-calendar/dist/Calendar.css';
 
 const AppointmentHeader = ({handleDateChange}) => {
