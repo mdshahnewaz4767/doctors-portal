@@ -6,7 +6,7 @@ import AppointmentsByDate from '../AppointmentsByDate/AppointmentsByDate';
 
 const containerStyle = {
     backgroundColor: "#F4FDFB",
-    height:"100%"
+    height:"100vh"
 }
 
 
@@ -33,7 +33,7 @@ const Dashboard = () => {
                 <div className="col-md-2">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-5 d-flex justify-content-center mt-5 pt-2">
+                <div className="col-md-5 d-flex justify-content-center mt-5 pt-2" style={{height: '350px'}}>
                 <Calendar
                     onChange={handleDateChange}
                     value={new Date()}
