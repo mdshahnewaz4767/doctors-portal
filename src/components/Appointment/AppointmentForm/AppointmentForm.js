@@ -31,6 +31,13 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
             },
             body: JSON.stringify(data)
         })
+        .then(res => res.json())
+        .then(success => {
+            if(success){
+                closeModal();
+                alert('Appointment created successfully')
+            }
+        })
     }
 
     return (
