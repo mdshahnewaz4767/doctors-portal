@@ -3,6 +3,7 @@
     position: relative;
     background-image: url(../../../images/chairBG.png);
     background-size: cover;
+    background-position: bottom;
 }
 @media (min-width: 768px){
     .header-container::after {

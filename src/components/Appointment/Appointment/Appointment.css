@@ -1,0 +1,10 @@
+.appointment-container{
+    height: 600px;
+    position: relative;
+    background-image: url(../../../images/chairBG.png);
+    background-size: cover;
+    background-position: center;
+}
+.calender-style{
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}

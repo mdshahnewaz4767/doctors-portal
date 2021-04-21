@@ -11,8 +11,7 @@ const Appointment = () => {
         setSelectedDate(date)
     }
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className="appointment-container">
             <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
             <BookAppointment date={selectedDate}></BookAppointment>
            <Footer></Footer>
