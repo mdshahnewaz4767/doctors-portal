@@ -5,6 +5,9 @@ import firebaseConfig from './firebase.config';
 import { useHistory, useLocation } from 'react-router';
 import { UserContext } from '../../../App';
 import LoginBg from '../../../images/loginBg.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import './Login.css';
 
 
 const Login = () => {
@@ -43,20 +46,12 @@ const Login = () => {
         <div className="login-page container">
             <div className="row align-items-center" style={{ height: "100vh" }}>
                 <div className="col-md-6 shadow p-5">
-                    <h4 className="text-center mb-5">Login</h4>
-                    <div className="form-group">
-                        <label htmlFor="">User Name</label>
-                        <input type="text" className="form-control" />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="">Password</label>
-                        <input type="password" className="form-control" />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="" className="text-danger">Forgot your password?</label>
-                    </div>
-                    <div className="from-group mt-5">
-                        <button className="btn btn-brand"  onClick={handleGoogleSignIn}>Google Sign in</button>
+                    <h5 className="text-center login-title fw-bold">Login With</h5>
+                    <div className="social-link">
+                        <FontAwesomeIcon className="me-2 google-icon" icon={faGoogle} />
+                        <button onClick={handleGoogleSignIn} className="btn btn-facebook mb-2">
+                            Continue with Google
+                        </button>
                     </div>
                 </div>
                 <div className="col-md-6 d-none d-md-block align-self-end">

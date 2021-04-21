@@ -4,5 +4,9 @@
 @media (min-width: 768px){
     .white{
         color: white !important;
+        transition: all .3s;
+    }
+    .white:hover{
+        color: rgb(201, 198, 198) !important;
     }
 }

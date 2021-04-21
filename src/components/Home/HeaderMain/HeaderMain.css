@@ -3,3 +3,13 @@
     margin-left: auto;
     display: block;
 }
+@media (max-width: 767px){
+    .header-body{
+        margin-left: .7rem;
+    }
+    .headerImg img{
+        width: 96%;
+        margin-left: .6rem;
+        margin-right: 1rem;
+    }
+}

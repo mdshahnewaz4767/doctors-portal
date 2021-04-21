@@ -3,6 +3,7 @@ import fluride from '../../../images/fluoride.png';
 import cavity from '../../../images/cavity.png';
 import whitening from '../../../images/whitening.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
+import './Services.css';
 
 const serviceData = [
     {
@@ -25,7 +26,7 @@ const serviceData = [
 
 const Services = () => {
     return (
-        <section>
+        <section className="service-style">
            <div className="text-center mt-5">
                 <h5 style={{color: '#5FC7C7'}}>Our Services</h5>
                 <h2 style={{color: '#203047'}}>Services We Provide</h2>
