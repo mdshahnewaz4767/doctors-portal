@@ -5,8 +5,7 @@ import firebaseConfig from './firebase.config';
 import { useHistory, useLocation } from 'react-router';
 import { UserContext } from '../../../App';
 import LoginBg from '../../../images/loginBg.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import google from '../../../images/googleIcon.png';
 import './Login.css';
 
 
@@ -48,7 +47,7 @@ const Login = () => {
                 <div className="col-md-6 shadow p-5">
                     <h5 className="text-center login-title fw-bold">Login With</h5>
                     <div className="social-link">
-                        <FontAwesomeIcon className="me-2 google-icon" icon={faGoogle} />
+                        <img src={google} className="img-fluid google-icon" alt=""/>
                         <button onClick={handleGoogleSignIn} className="btn btn-facebook mb-2">
                             Continue with Google
                         </button>

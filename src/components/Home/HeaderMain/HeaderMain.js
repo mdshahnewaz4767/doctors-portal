@@ -5,7 +5,7 @@ import './HeaderMain.css';
 
 const HeaderMain = () => {
     return (
-        <main style={{height: '600px'}} className="row align-items-center">
+        <main style={{height: '600px'}} className="d-md-flex align-items-center">
             <div className="col-12 col-md-4 offset-md-1 header-body">
                 <h1 style={{color: '#203047'}}className="mb-4">Your New Smile <br/> Starts Here</h1>
                 <p className="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat reiciendis iste vel omnis quod voluptatem sequi repellendus quos unde sunt.</p>
