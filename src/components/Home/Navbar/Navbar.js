@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
@@ -15,19 +17,24 @@ const Navbar = () => {
                             <Link to="/home" className="nav-link me-5 font-500">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/about" className="nav-link me-5 font-500">About</Link>
+                            <Link to="#" className="nav-link me-5 font-500">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/dental" className="nav-link me-5 font-500">Dental Services</Link>
+                            <Link to="/appointment" className="nav-link me-5 font-500">Appointment</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/review" className="nav-link me-5 font-500 text-white">Reviews</Link>
+                            <Link to="#" className="nav-link me-5 font-500 text-white">Reviews</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/blog" className="nav-link me-5 font-500 text-white">Blog</Link>
+                            <Link to="#" className="nav-link me-5 font-500 text-white">Contact Us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link me-5 font-500 text-white">Contact Us</Link>
+                            {
+                                loggedInUser.email ? <p className="nav-link user-name">{loggedInUser.name == null ? loggedInUser.email : loggedInUser.name}</p> : 
+                                <Link to="/login" className=" me-5 font-500 text-white">
+                                    <button className="btn btn-primary">Login</button>
+                                </Link>
+                            }
                         </li>
                     </ul>
                 </div>    

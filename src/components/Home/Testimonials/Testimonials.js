@@ -34,7 +34,7 @@ const Testimonials = () => {
                    <h5 className="text-primary text-uppercase">Testimonial</h5>
                    <h1>What Our Patients <br/> Says </h1>
                </div>
-               <div className="card-deck mt-5">
+               <div className="card-deck mt-5 row">
                     {
                         testimonialData.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial.name}/>)
                     }

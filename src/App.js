@@ -26,7 +26,6 @@ function App() {
           <Route path="/appointment">
             <Appointment />
           </Route>
-          
           <Route path="/dashboard/appointment">
             <Dashboard />
           </Route>
