@@ -1,3 +1,8 @@
 .font-500{
     font-weight: 500;
 }
+@media (min-width: 768px){
+    .white{
+        color: white !important;
+    }
+}

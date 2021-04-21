@@ -4,8 +4,6 @@
 .blogs .card-header{
     border: 0;
     background-color: transparent;
-
-
 }
 
 .blogs .card:hover{
@@ -13,14 +11,10 @@
     color: #fff !important;
     transition:  .1s  all ease-in-out !important;
 }
-.blogs .card:hover .card-body{
-    background-image: url(../../../images/quote.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 60%;
-}
+
 .blogs .card:hover h6,
-.blogs .card:hover p
+.blogs .card:hover p,
+.blogs .card:hover h5
 {
     color: #fff !important;
 

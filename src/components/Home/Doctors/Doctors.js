@@ -13,7 +13,6 @@ const Doctors = () => {
         .catch(error => alert("Something went wrong!! Please try again later!"))
     }, [])
 
-    console.log(doctorsData);
     return (
         <section className="doctors">
             <div className="container">

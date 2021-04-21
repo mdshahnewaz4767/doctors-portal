@@ -3,6 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import AppointmentsByDate from '../AppointmentsByDate/AppointmentsByDate';
+import './Dashboard.css';
 
 const containerStyle = {
     backgroundColor: "#F4FDFB",
@@ -33,14 +34,19 @@ const Dashboard = () => {
                 <div className="col-md-2">
                     <Sidebar></Sidebar>
                 </div>
-                <div className="col-md-5 d-flex justify-content-center mt-5 pt-2" style={{height: '350px'}}>
-                <Calendar
-                    onChange={handleDateChange}
-                    value={new Date()}
-                />
-                </div>
-                <div className="col-md-5">
-                    <AppointmentsByDate appointments={appointments}></AppointmentsByDate>
+                <div className="col-md-10  mt-5 pt-2" style={{height: '350px'}}>
+                    <h5 className="mb-5 fw-bold">Appointments</h5>
+                    <div className="row">
+                        <div className="col-12 col-md-6">
+                            <Calendar
+                            onChange={handleDateChange}
+                            value={new Date()}
+                            />
+                        </div>
+                        <div className="col-12 col-md-6">
+                            <AppointmentsByDate appointments={appointments}></AppointmentsByDate>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

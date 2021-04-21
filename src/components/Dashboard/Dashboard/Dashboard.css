@@ -1,0 +1,19 @@
+.react-calendar{
+    width: 95% !important;
+    border: 0px;
+    height: 100%;
+    border-radius: 10px;
+}
+.react-calendar__navigation{
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+.react-calendar__viewContainer{
+    padding-bottom: 3rem;
+}
+.appoint-pad{
+    padding-bottom: 10rem;
+}
+.red{
+    border-radius: 10px;
+}

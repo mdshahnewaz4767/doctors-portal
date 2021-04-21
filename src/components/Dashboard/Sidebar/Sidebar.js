@@ -25,7 +25,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/doctor/prescriptions" className="text-white">
+                    <Link to="#" className="text-white">
                         <FontAwesomeIcon icon={faFileAlt} /> <span>Prescriptions</span>
                     </Link>
                 </li>
@@ -36,7 +36,7 @@ const Sidebar = () => {
                 </li>
             </ul>
             <div>
-                <Link to="/" className="text-white"><FontAwesomeIcon icon={faHome} /> <span>Home</span></Link>
+                <Link to="/" className="text-white line"><FontAwesomeIcon icon={faHome} /> <span>Home</span></Link>
             </div>
         </div>
     );

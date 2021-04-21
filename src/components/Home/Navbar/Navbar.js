@@ -23,10 +23,10 @@ const Navbar = () => {
                             <Link to="/appointment" className="nav-link me-5 font-500">Appointment</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="#" className="nav-link me-5 font-500 text-white">Reviews</Link>
+                            <Link to="/dashboard" className="nav-link me-5 font-500 white">Doctor</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="#" className="nav-link me-5 font-500 text-white">Contact Us</Link>
+                            <Link to="#" className="nav-link me-5 font-500 white">Contact Us</Link>
                         </li>
                         <li className="nav-item">
                             {

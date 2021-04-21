@@ -23,7 +23,7 @@ const Navbar = () => {
                             <Link to="appointment" className="nav-link me-5 font-500">Appointment</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="#" className="nav-link me-5 font-500">Reviews</Link>
+                            <Link to="/dashboard" className="nav-link me-5 font-500">Doctor</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="#" className="nav-link me-5 font-500">Contact Us</Link>
