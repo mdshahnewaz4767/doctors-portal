@@ -26,7 +26,7 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
         data.created = new Date();
         console.log(data);
 
-        fetch('http://localhost:5000/addAppointment', {
+        fetch('https://secret-oasis-20004.herokuapp.com/addAppointment', {
             method: 'POST',
             headers: { 
                 'Content-type': 'application/json'

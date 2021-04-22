@@ -5,7 +5,10 @@ firebase.config.js
 /node_modules
 /.pnp
 .pnp.js
-
+.firebaserc
+firebase-debug.log
+firebase.json
+.firebase/
 # testing
 /coverage
 
