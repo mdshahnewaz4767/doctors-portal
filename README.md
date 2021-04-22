@@ -1,5 +1,5 @@
 # doctors-portal
-### [Live Site](/) 
+### [Live Site](https://doctors-portal-cc647.web.app/) 
 A patient can make an appointment with a specific date. Doctors view report in dashboard. Doctors action create. Dynamic prescription generator.
 
 # Features 
