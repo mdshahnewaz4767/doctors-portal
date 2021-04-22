@@ -49,7 +49,7 @@ const AddDoctor = () => {
         <section className="container-fluid row">
             <Sidebar></Sidebar>
             <div className="col-md-10 p-4 pe-5 ps-5 pt-5" style={{ position: "absolute", right: '4px', backgroundColor: "#F4FDFB", zIndex: '-50' }}>
-                <h5 className="text-brand">Add a Doctor</h5>
+                <h5 className="mb-5 fw-bold">Add a Doctor</h5>
                 {addSuccess &&
                      <div className="mt-5">
                         <div className="alert alert-success alert-dismissible fade show" role="alert">

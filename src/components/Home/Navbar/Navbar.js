@@ -23,14 +23,17 @@ const Navbar = () => {
                             <Link to="/appointment" className="nav-link me-5 font-500">Appointment</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/dashboard" className="nav-link me-5 font-500 white">Doctor</Link>
+                            {
+                                loggedInUser.name ? <Link to="/dashboard" className="nav-link me-5 font-500">Doctor</Link> 
+                                : <Link to="/dashboard" className="nav-link me-5 font-500 white">Doctor</Link>
+                            }
                         </li>
                         <li className="nav-item">
                             <Link to="#" className="nav-link me-5 font-500 white">Contact Us</Link>
                         </li>
                         <li className="nav-item">
                             {
-                                loggedInUser.email ? <p className="nav-link user-name">{loggedInUser.name == null ? loggedInUser.email : loggedInUser.name}</p> : 
+                                loggedInUser.email ? <p className="nav-link user-name me-4  white fw-bold">{loggedInUser.name == null ? loggedInUser.email : loggedInUser.name}</p> : 
                                 <Link to="/login" className=" me-5 font-500 text-white">
                                     <button className="btn btn-primary">Login</button>
                                 </Link>

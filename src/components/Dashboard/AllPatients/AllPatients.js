@@ -19,7 +19,7 @@ const AllPatients = () => {
                 <Sidebar></Sidebar>
             </div>
             <div className="col-md-10 p-4 pe-5 ps-5 pt-5" style={{ position: "absolute", right: '8px', backgroundColor: "#F4FDFB", zIndex: '-50', height:"100vh"}}>
-                <h5 className="text-brand mb-5">All Patients</h5>
+                <h5 className="fw-bold mb-5">All Patients</h5>
                 <AppointmentDataTable appointments={appointments} />
             </div>
         </div>

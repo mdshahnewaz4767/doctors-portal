@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Modal from 'react-modal';
+import { UserContext } from '../../../App';
 
 const customStyles = {
   content : {
@@ -16,6 +17,7 @@ const customStyles = {
 Modal.setAppElement('#root')
 
 const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const { register, handleSubmit, errors } = useForm();
     
     const onSubmit = data => {
@@ -62,14 +64,14 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
                         {errors.phone && <span className="text-danger">This field is required</span>}
                     </div>
                     <div className="form-group">
-                        <input type="text" ref={register({ required: true })} name="email" placeholder="Email" className="form-control" />
+                        <input type="text" defaultValue={loggedInUser.email} ref={register({ required: true })} name="email" placeholder="Email" className="form-control"  readOnly/>
                         {errors.email && <span className="text-danger">This field is required</span>}
                     </div>
                     <div className="form-group row">
                         <div className="col-4">
 
-                            <select className="form-control" name="gender" ref={register({ required: true })} >
-                                <option disabled={true} value="Not set">Select Gender</option>
+                            <select className="form-control modalSelect" name="gender" ref={register({ required: true })}>
+                                <option disabled value="Not set">Select Gender</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 <option value="Not set">Other</option>
